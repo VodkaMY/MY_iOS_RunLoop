@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGX-nv-Cbv">
+                                <rect key="frame" x="10" y="95" width="355" height="44"/>
+                                <color key="backgroundColor" red="0.93330062970000005" green="0.9552378654" blue="0.29541102499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="f45-KA-BbG"/>
+                                </constraints>
+                                <state key="normal" title="创建线程"/>
+                                <connections>
+                                    <action selector="createBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qwO-QF-QOA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhD-ra-yxo">
+                                <rect key="frame" x="10" y="164" width="355" height="44"/>
+                                <color key="backgroundColor" red="0.93330062970000005" green="0.9552378654" blue="0.29541102499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="KoW-Nu-J0H"/>
+                                </constraints>
+                                <state key="normal" title="继续创建线程"/>
+                                <connections>
+                                    <action selector="otherBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UA6-71-1II"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qGX-nv-Cbv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="AWe-Mf-HOg"/>
+                            <constraint firstItem="qGX-nv-Cbv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="FOd-rY-GM4"/>
+                            <constraint firstAttribute="trailing" secondItem="jhD-ra-yxo" secondAttribute="trailing" constant="10" id="g2q-y1-hTx"/>
+                            <constraint firstItem="jhD-ra-yxo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="gkk-OW-ZOX"/>
+                            <constraint firstItem="jhD-ra-yxo" firstAttribute="top" secondItem="qGX-nv-Cbv" secondAttribute="bottom" constant="25" id="mzd-bB-tJf"/>
+                            <constraint firstAttribute="trailing" secondItem="qGX-nv-Cbv" secondAttribute="trailing" constant="10" id="qjQ-ef-RwL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
